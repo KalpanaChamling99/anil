@@ -11,3 +11,7 @@ th{
 td{
     padding: 2px 5px;  
 }
+
+tr:hover{
+    background-color: #cac9c9;
+}
