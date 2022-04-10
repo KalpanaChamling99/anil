@@ -10,6 +10,10 @@ body{
 a{
     text-decoration: none;
     transition: all 0.5s linear;
+    color: #010101;
+}
+a:hover{
+    color: #7879F1;
 }
 img{
     max-width: 100%;
@@ -83,12 +87,9 @@ img{
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
-    color: #010101;
     font-weight: 500;
 }
-.sidebar-nav a:hover{
-    color: #7879F1;
-}
+
 .sidebar-nav span{
     display: inline-block;
 }
@@ -102,6 +103,29 @@ img{
     padding-left: 15px;
 }
 /* *******--sidebar navigation--******** */
+
+/* quick link */
+.quick-link{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    background-color: #F3F3FF;
+    margin-top: 30px;
+    padding: 15px;
+    height: 100%;
+}
+.quick-link a{
+    display: block;
+    width: 100%;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #7879F1;
+}
+.quick-link a:hover{
+    color: #010101;
+}
+/* ********quick link**** */
 /* main content */
 .main-content{
     padding: 15px 0 45px;
