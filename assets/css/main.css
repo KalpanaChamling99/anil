@@ -27,11 +27,24 @@ img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    position: relative;
 }
 .image-border{
     border: 4px solid #7879F1;
     border-radius: 5px;
+}
+.image-with-desc{
+    position: relative;
+}
+.image-with-desc .image-desc{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(1,1,1,0.63);
+    color: #fff;
 }
 .h-100{
     height: 100%;
