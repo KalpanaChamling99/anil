@@ -1,13 +1,31 @@
+.table-section{
+    padding-top: 15px;
+}
+.table-section .section-title{
+    margin: 15px 0 0;
+}
 table{
     width: 100%;
+    border-spacing: 0;
+    border-width: 0 1px 1px 0;
+    margin-top: 15px;
+}
+table,
+th,
+td{
+    border-style: solid;
+    border-color: rgb(120,121,241,0.26);
+}
+th,td{
+    border-width: 1px 0 0 1px;
+    padding: 5px 10px;
 }
 
 th{
     text-align: left;
-    background-color: #cac9c9;
-    padding: 2px 5px;
+    background-color: #F3F3FF;
+}
+th:nth-child(2){
+    width: 70%;
 }
 
-td{
-    padding: 2px 5px;  
-}
