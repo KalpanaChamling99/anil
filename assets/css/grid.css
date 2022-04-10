@@ -9,12 +9,12 @@
 .row{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
 }
 .col{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
 }
 
 .col-3{
