@@ -29,10 +29,3 @@
    flex: 0 0 58.33%;
    max-width: 58.33%; 
 }
-.right-content,
-.left-content{
-    background-color: #e1e1e1;
-}
-.center-content{
-    background-color: aliceblue;
-}

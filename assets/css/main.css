@@ -11,6 +11,11 @@ a{
     text-decoration: none;
     transition: all 0.5s linear;
 }
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
 .text-center{
     text-align: center;
 }
@@ -47,6 +52,42 @@ a{
 
 /* ********--Navigation---******* */
 
+/* Sidebar navigation */
+.sidebar-nav{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+.sidebar-nav .logo img{
+    max-width: 70%;
+}
+.sidebar-nav li{
+    padding-top: 15px;
+}
+.sidebar-nav a{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    color: #010101;
+    font-weight: 500;
+}
+.sidebar-nav a:hover{
+    color: #7879F1;
+}
+.sidebar-nav span{
+    display: inline-block;
+}
+.sidebar-nav a .icon{
+    flex: 0 0 40px;
+    max-width: 40px;
+}
+.sidebar-nav a .caption{
+    flex: 0 0 calc(100% - 40px);
+    max-width: calc(100% - 40px);
+    padding-left: 15px;
+}
+/* *******--sidebar navigation--******** */
 
 /* footer */
 footer{
