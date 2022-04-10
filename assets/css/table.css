@@ -21,11 +21,21 @@ th,td{
     padding: 5px 10px;
 }
 
-th{
-    text-align: left;
+thead tr{
     background-color: #F3F3FF;
+}
+th{
+text-align: left;
 }
 th:nth-child(2){
     width: 70%;
 }
+tbody tr{
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+tbody tr:hover{
+    background-color: #F3F3FF;
+}
+
 
