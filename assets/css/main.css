@@ -6,6 +6,7 @@ body{
     font-family: "Poppins";
     font-size: 16px;
     font-weight: 400;
+    color: rgba(1,1,1,0.6);
 }
 a{
     text-decoration: none;
@@ -68,6 +69,9 @@ img{
     display: flex;
     flex-wrap: wrap;
 }
+.nav-menu li{
+    position: relative;
+}
 .nav-menu>li>a{
     color: #010101;
     padding: 15px;
@@ -76,11 +80,91 @@ img{
     background-color: #7879F1;
     color: #fff;
 }
+.nav-menu>li>a:hover:after{
+    border-color: #fff;
+}
 .nav-menu li a{
     display: inline-block;
     font-weight: 500;
+    position: relative;
 }
-
+.nav-menu .has-children>a{
+    padding-right: 30px;
+}
+.nav-menu .has-children>a:after{
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-width: 2px 2px 0 0;
+    border-style: solid;
+    border-color: #000;
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    transform: rotate(135deg);
+} 
+.nav-menu .sub-menu .has-children>a:after{
+    transform: rotate(45deg);
+    border-color: #fff;
+}  
+.nav-menu .sub-menu a:hover{
+    color: #010101;
+    background-color: #F3F3FF;
+}
+.nav-menu .sub-menu a:hover:after{
+    border-color: #010101;
+}
+.sub-menu{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 220px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    z-index: 3; 
+    background-color: #7879F1;
+}
+ul.nav-menu  > li .sub-menu > li .sub-menu{
+    top: 20%;
+    left: 100%;
+    visibility: hidden;
+    overflow: hidden;
+}
+.sub-menu a{
+    display: block;
+    width: 100%;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-color: #D5D5D5;
+    display: block;
+    padding: 10px;
+    color: #fff;
+}
+ul.nav-menu > li:hover > .sub-menu,
+ul.nav-menu > li:focus-within .sub-menu{
+  top: 100%;
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+  visibility: visible;
+}
+ul.nav-menu  > li .sub-menu > li:hover .sub-menu,
+ul.nav-menu > li .sub-menu > li:focus-within .sub-menu{
+  opacity: 1;
+  height: auto;
+  top: 0;
+  overflow: visible;
+  visibility: visible;
+}
 
 /* ********--Navigation---******* */
 
