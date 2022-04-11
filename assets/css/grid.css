@@ -1,4 +1,4 @@
-.container{
+.container {
     width: 1300px;
     margin-left: auto;
     margin-right: auto;
@@ -6,26 +6,30 @@
     padding-right: 15px;
     max-width: 100%;
 }
-.row{
+
+.row {
     display: flex;
     flex-wrap: wrap;
     margin-left: -7.5px;
     margin-right: -7.5px;
 }
-.col{
+
+.col {
     padding-left: 7.5px;
     padding-right: 7.5px;
 }
 
-.col-3{
+.col-3 {
     flex: 0 0 25%;
     max-width: 25%;
 }
-.col-4{
+
+.col-4 {
     flex: 0 0 33.33%;
     max-width: 33.33%;
 }
-.col-6{
-   flex: 0 0 50%;
-   max-width: 50%; 
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
 }

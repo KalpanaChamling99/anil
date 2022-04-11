@@ -1,22 +1,27 @@
-.image-list-section{
+.image-list-section {
     padding-top: 15px;
 }
-.image-list-section .section-title{
+
+.image-list-section .section-title {
     margin: 0;
     padding-top: 15px;
 }
-.image-list .image-wrapper{
+
+.image-list .image-wrapper {
     margin-top: 15px;
 }
-.image-list .image-section{
+
+.image-list .image-section {
     height: 200px;
     transition: all 0.5s linear;
     overflow: hidden;
     backface-visibility: hidden;
 }
-.image-list .image-section:hover{
+
+.image-list .image-section:hover {
     transform: scale(1.1);
 }
-.hover-effect{
+
+.hover-effect {
     overflow: hidden;
 }
